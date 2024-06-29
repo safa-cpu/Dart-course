@@ -1,6 +1,6 @@
  void main (){
-
- int number = 35;
+ 
+ int number = 3523;
  if (number % 5 == 0|| number % 7 == 0)
  {if (number% 5== 0 && number % 7 == 0){print("number is divisible by both");} 
  else if (number % 7 == 0){print("number is divisible by 7");}
