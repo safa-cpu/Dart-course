@@ -1,5 +1,3 @@
-import 'dart:math';
-
 void main(){
 // A WHOLE VARIABLE WHICH CAN CONTAIN ALL TYPE OF DATA
 var family = ["Safa","Affan","Aisha","Ghulam Hussain"];
