@@ -57,6 +57,53 @@ some.sort();
 print(some);
 var abcd = List.of(some.reversed);
 print(abcd);
+// for each method
+studentnames.forEach((name) {print(name);});
+// output
+// Affan
+// Mother
+// Aisha
+// Daughter
+// Ghulam
+// Papa
+// Family
+// Good
+
+// map method
+List <int> integers =  [1,3,5,7,9];
+List <int> doublednumbers = integers.map((num)=> (num*2)).toList();
+print(doublednumbers);
+//[2,6,10,14,18]
+// where method
+List<int> oddnumbers= doublednumbers.where((num)=>num.isOdd).toList();
+print(oddnumbers);//[]
+//any method
+bool hasEven = integers.any((num)=>num.isEven);
+print (hasEven);//false
+//every method
+bool allOdd = integers.every((num)=> num.isOdd);
+print (allOdd);//true
+//contains
+// List <int> integers =  [1,3,5,7,9];
+print (integers.contains(2)); //false
+// indexof and lastindexof
+print(integers.indexOf(3)); //1
+print(integers.lastIndexOf(3)); //1
+// shuffle method
+integers.shuffle();
+print(integers);//[3, 5, 1, 7, 9]
+// sublist method
+List<int> subset = integers.sublist(1,4);
+print(subset);//[5, 1, 7]
+// take method
+List<int> firstthree = integers.take(3).toList();
+print(firstthree);
+//skip method
+List<int> lasttwo = integers.skip(2).toList();
+print(lasttwo);
+
+
+
 
 
 }
