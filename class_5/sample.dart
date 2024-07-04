@@ -40,14 +40,22 @@ int product = number.reduce((previousValue, element) => previousValue * element)
 print (sum);
 print(product);
 // another sample
- Map<dynamic,dynamic> studentrecords = 
- {"name": "Safa", "rollNo": 126740," marks": 64, "Grade": "A+"};
+Map<dynamic,dynamic> studentrecords = 
+{"name": "Safa", "rollNo": 126740," marks": 64, "Grade": "A+"};
 studentrecords.forEach((key, value) {
-  if (key == 'rollNo' ||  key == 'marks' || key == 'Grade') {
-    print('Safa\'s $key is $value.');
-  }
+if (key == 'rollNo' ||  key == 'marks' || key == 'Grade') {
+print('Safa\'s $key is $value.'); }
 });
-
+var abcd = 0;
+var A = abcd--; // A = 0 // abcd = -1
+var b = abcd--; // b = -1 // abcd = -2
+var c = ++b; // c = 0 // b = 0
+var d = A++; // d = 0 // A = 1
+var f = --c; //f = -1 // c = -1
+var Q = f++; // Q = -1 // f = 0
+var W = Q--; // W = -1 // Q = -2
+var result = W++ + --d; // result = (-1) + (-1) => -2
+print(result); // -2
 }
 
 
