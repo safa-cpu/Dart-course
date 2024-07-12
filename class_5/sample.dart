@@ -56,6 +56,16 @@ var Q = f++; // Q = -1 // f = 0
 var W = Q--; // W = -1 // Q = -2
 var result = W++ + --d; // result = (-1) + (-1) => -2
 print(result); // -2
+
+
+for (int i = 1; i <= 10; i++) {
+  print("Multiplication table for $i:");
+  for (int j = 1; j <= 10; j++) {
+    int product = i * j;
+    print("$i x $j = $product");
+  }
+  print(""); // Add an empty line for readability
+}
 }
 
 
