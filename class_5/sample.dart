@@ -66,7 +66,17 @@ for (int i = 1; i <= 10; i++) {
   }
   print(""); // Add an empty line for readability
 }
-}
+
+String name = "Safa";
+num Maths = 70;
+num English = 18;
+num Biology = 89;
+num TotalMarks = 300;
+num Obtainedmarks = (Maths + English + Biology);
+num percentage = (Obtainedmarks/TotalMarks)*100;
+if (percentage>50) {print("$name : pass");} 
+else {print("$name:pass");}}
+
 
 
 
