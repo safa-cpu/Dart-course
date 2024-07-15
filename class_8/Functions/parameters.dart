@@ -1,20 +1,49 @@
 void main (){
-studentMarkSheet(
-name: "Safa",
-Maths: 45,
-English: 78,
-);
+List<int> numbers = [12, 13, 14, 19, 29];
+for (var number in numbers) 
+{(numberTable(number));} 
+
+studentsData(name: "Safa", rollnumber: "27");
+studentsData(name: "Affan", rollnumber: "28");
+studentsData(name: "Aisha", rollnumber: "29");
+
+print(sumOfTwoNumbers(32, 90));
+print(sumOfTwoNumbers(23, 80));
+print(sumOfTwoNumbers(43, 67));
+
+studentMarkSheet(name: "Safa", 
+maths: 75, 
+english: 87, 
+biology: 59);
+}
+numberTable(num number){
+for (var i = 1; i <= 10; i++) {
+print("$number x $i = ${number*i}"); }
+print("");
 }
 
-studentMarkSheet({
-required String name,
-required num Maths,  
-required num English,
-num Biology = 59
-})
-{num TotalMarks = 300;
-num Obtainedmarks = (Maths + English + Biology);
-num percentage = (Obtainedmarks/TotalMarks)*100;
-if (percentage>50) {print("$name : pass , percentage : $percentage");} 
-else {print("$name : pass , percentage : $percentage");}
+
+studentsData({required String name, String section = "B" , required String rollnumber}){
+print("$name rollnumber is $rollnumber and section is $section");
 }
+
+
+
+sumOfTwoNumbers(int number1, int number2){
+num result = number1+number2;
+return(result);
+}
+
+studentMarkSheet({required String name, required int maths, required int english, 
+required int biology})
+{
+int totalmarks = 300;
+int obtainedmarks = (maths + english + biology);
+num percentage = (obtainedmarks / totalmarks)*100;
+if (percentage > 50) {
+print("$name is pass and percentage is $percentage");} 
+else {
+print("$name is failed and percentage is $percentage");}
+}
+    
+  

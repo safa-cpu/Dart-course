@@ -1,7 +1,7 @@
 void main (){
-  print(result);
-  Sum();
-  print(result);
+print(result);
+Sum();
+print(result);
 }
 
 num result = 0;
