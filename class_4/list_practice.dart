@@ -101,11 +101,6 @@ print(firstthree);
 //skip method
 List<int> lasttwo = integers.skip(2).toList();
 print(lasttwo);
-
-
-
-
-
 }
 
 

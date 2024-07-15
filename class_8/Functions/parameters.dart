@@ -4,7 +4,7 @@ for (var number in numbers)
 {(numberTable(number));} 
 
 studentsData(name: "Safa", rollnumber: "27");
-studentsData(name: "Affan", rollnumber: "28");
+studentsData(name: "Affan", rollnumber: "28", section : "A");
 studentsData(name: "Aisha", rollnumber: "29");
 
 print(sumOfTwoNumbers(32, 90));
@@ -23,7 +23,7 @@ print("");
 }
 
 
-studentsData({required String name, String section = "B" , required String rollnumber}){
+studentsData({ name, String section = "B" , rollnumber}){
 print("$name rollnumber is $rollnumber and section is $section");
 }
 
