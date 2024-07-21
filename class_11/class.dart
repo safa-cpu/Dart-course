@@ -15,7 +15,7 @@ class Student {
   projectsubmitted(bool isProjectSubmitted){
     String abc = name;
     if (isProjectSubmitted== true) {
-      print("$name acha student hai");
+      print("$name acha/achi student hai");
     } else {
       print("$name ko nikalo");
     }
