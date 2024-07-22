@@ -13,7 +13,6 @@ class Student {
   late int rollno;
   String section = "B";
   projectsubmitted(bool isProjectSubmitted){
-    String abc = name;
     if (isProjectSubmitted== true) {
       print("$name acha/achi student hai");
     } else {
