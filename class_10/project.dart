@@ -1,39 +1,49 @@
 import 'dart:io';
-List tasks = ["value"];
-void main () {
-  print("WELCOME TO TO-DO LIST ORGANIZER");
-  var continued = true;
-  while (continued) {
-  print("press '1' for ADD TASK");
-  print("press '2' for VIEW TASK");
-  print("press '3' for UPDATE TASK");
-  print("press '4' for REMOVE TASK");
-  print("press '5'or 'ANY KEY' for EXIT");
 
-  var userInput = stdin.readLineSync();
-  if (userInput=="1") {
-    addTask();    
-  }else if (userInput=="2"){
-    viewTask();
-  }else if (userInput=="3"){
-    updateTask();
-  }else if (userInput=="4"){
-    removeTask();
-  }else{
-    print("APP IS CLOSING");
-    continued = false;
-  }
-  }
-  }
+List tasks = [];
+void main(){
+print("WELCOME TO TO-DO LIST ORGANIZER");
+bool continued = true;
+while (continued) {
+  
+print("PRESS 1 TO ADD NEW TASK");
+print("PRESS 2 TO VIEW TASK");
+print("PRESS 3 TO EDIT TASK");
+print("PRESS 4 TO DELETE TASK");
+print("PRESS 5 OR ANY OTHER  KEY TO EXIT");
 
+var userInput = stdin.readLineSync();
+if (userInput== "1") {
+  addTask();}
+else if (userInput=="2") {
+  viewTask();
+}
+else if (userInput=="3") {
+  editTask();
+}
+else if (userInput=="4") {
+  deleteTask();
+}
+else {
+  print("APP IS CLOSING");
+  continued = false;
+ viewTask();
+
+}
+  
+}
+}
 addTask(){
-  tasks.add("value");
+  print("ENTER YOUR TASK");
+  var task = stdin.readLineSync();
+  tasks.add(task);
+  print("task added => $task");
 }
 viewTask(){
-  print ("My tasks : $tasks");
+  for (var i = 0; i < tasks.length; i++) {
+    print("$i. My tasks : ${tasks[i]}");
+    
+  }
 }
-updateTask(){}
-removeTask(){}
-
-
-
+editTask(){}
+deleteTask(){}
